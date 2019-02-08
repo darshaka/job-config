@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: prod
+
+ribbon:
+  eureka:
+    enabled:  true
+  host:
+    connectTimeoutMillis: 600000
+    socketTimeoutMillis:  600000
+  ReadTimeout:  30000
+  ConnectTimeout: 30000
