@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: zuulService
+  profiles:
+    active: dev
+  cloud:
+    enable: true
+    config:
+      uri: http://192.168.0.64:8888
+      failFast: true
+      retry:
+        maxAttempts: 20
+      label: master
+      profile: dev
